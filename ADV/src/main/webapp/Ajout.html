@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">	
+    <title>Ajouter une transaction</title>
+    
+
+    <style>
+      /* Ajouter du style CSS ici */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"], input[type="submit"] {
+        margin: 5px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px grey;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ajouter une transaction</h1>
+    <form action="AjoutServlet" method="post">
+      <label for="ref">Référence :</label>
+      <input type="text" id="ref" name="ref"><br>
+
+      <label for="CptDep">Compte débité :</label>
+      <input type="text" id="CptDep" name="CptDep"><br>
+
+      <label for="CptCred">Compte crédité :</label>
+      <input type="text" id="CptCred" name="CptCred"><br>
+
+      <label for="Montant">Montant :</label>
+      <input type="text" id="Montant" name="Montant"><br>
+
+      <input type="submit" value="Ajouter">
+    </form>
+  </body>
+</html>
+

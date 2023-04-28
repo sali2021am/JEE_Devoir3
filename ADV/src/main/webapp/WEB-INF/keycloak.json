@@ -1,0 +1,13 @@
+{
+  "realm": "cyber_App",
+  "auth-server-url": "http://localhost:8080/",
+  "ssl-required": "external",
+  "resource": "democlient",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "ezZREI1BWTeGYTkWD4K6h1fzFicnQM1V"
+  },
+  "use-resource-role-mappings": true,
+  "confidential-port": 0,
+  "allow-any-hostname": true
+}
